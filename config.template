@@ -1,0 +1,31 @@
+[Common]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; need to set
+trace_dir = "/data/caida/"
+trace_filename = "trace.txt"
+trace_bufsize = 100000000
+; 1: bind theads to CPU cores, 0: no bind
+is_pin_cpu = 0
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+zmq_data_server = "tcp://127.0.0.1:9000"
+zmq_cmd_server = "tcp://127.0.0.1:9001"
+redis_ip = "127.0.0.1"
+redis_port = 6379
+is_enable_ovs = 0
+
+hash_seed = 19880412
+key_len = 104
+
+appro_sample_rate = 1000001
+interval_len = 1000
+
+alg_name = "rev"
+
+is_output = 1
+output_tmp_dir = "/home/qhuang/workspace/output_sigcomm18/tmp/"
+output_suffix = ""
+
+ground_dir = "/home/qhuang/workspace/output_sigcomm18/true/"
+num_interval = 3
